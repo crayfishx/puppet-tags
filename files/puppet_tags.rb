@@ -16,7 +16,6 @@ options = {
 if File.exists?("/etc/puppet_tags.yaml")
   configoptions = YAML.load_file("/etc/puppet_tags.yaml")
   options.merge!(configoptions)
-  p options
 end
 
 options.keys.each do |o|
