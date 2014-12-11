@@ -15,7 +15,7 @@ class puppet_tags (
       mode    => '0744';
 
     '/etc/puppet_tags.yaml':
-      content => template('puppet_tags/puppet_tags.yaml.erb')
+      content => template('puppet_tags/puppet_tags.yaml.erb'),
       mode    => '0644';
   }
     
